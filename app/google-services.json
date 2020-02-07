@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "542352027690",
+    "firebase_url": "https://starbhak-attendance.firebaseio.com",
+    "project_id": "starbhak-attendance",
+    "storage_bucket": "starbhak-attendance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542352027690:android:f805a6c66c517e368cd353",
+        "android_client_info": {
+          "package_name": "com.samuelbernard.starbhakattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542352027690-m6c3d2cdv13cf9ug3d8jpqfrb1bruemg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.samuelbernard.starbhakattendance",
+            "certificate_hash": "69f6dbf016a7b49abc725f8639f2f647e2702117"
+          }
+        },
+        {
+          "client_id": "542352027690-74uhp6sifef1gm6ikn81pu0vjm61rrvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4s-gI3SzkYpzCTLLRPc6ajXKylboLCO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542352027690-74uhp6sifef1gm6ikn81pu0vjm61rrvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
