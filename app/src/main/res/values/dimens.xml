@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_small_margin">8dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_md_elevation">4dp</dimen>
+    <dimen name="card_lg_elevation">8dp</dimen>
+    <dimen name="card_x_lg_elevation">12dp</dimen>
+
+    <!-- Fab -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Slide -->
+    <dimen name="slide_title">30sp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <!-- Divider -->
+    <dimen name="divider_margin">8dp</dimen>
+    <dimen name="divider_height">40dp</dimen>
+
+</resources>

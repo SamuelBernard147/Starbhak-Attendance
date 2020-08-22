@@ -1,3 +1,61 @@
 <resources>
-    <string name="app_name">StarbhakAttendance</string>
+    <string name="app_name">Starbhak Attendance</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Login -->
+    <string name="smk_taruna_bhakti_logo">SMK Taruna Bhakti logo</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">Password</string>
+    <string name="show_password">Show password</string>
+    <string name="forget_password">Forget password</string>
+
+    <!--Title-->
+    <string name="dialog_title_confirmation_yes">Ya</string>
+    <string name="dialog_title_confirmation_ok">OK</string>
+    <string name="dialog_title_confirmation_no">Tidak</string>
+    <string name="dialog_title_confirmation_close">Tutup</string>
+    <string name="dialog_title_fail">Gagal</string>
+    <string name="dialog_title_info">Pemberitahuan</string>
+    <string name="dialog_title_success">Berhasil</string>
+    <string name="dialog_password_changed">Password dirubah</string>
+
+    <!--Message-->
+    <string name="dialog_msg_loading">Mohon menunggu…</string>
+    <string name="dialog_msg_invalid_login">Mohon periksa email, dan password anda</string>
+    <string name="dialog_msg_send_success">Data berhasil terkirim</string>
+    <string name="dialog_msg_send_failed">Data gagal terkirim</string>
+    <string name="dialog_msg_update_failed">Data gagal diupdate</string>
+    <string name="dialog_msg_invalid_data">Mohon login kembali</string>
+    <string name="dialog_msg_request_timeout">Request timeout</string>
+    <string name="dialog_msg_service_maintenance">Layanan sedang dalam pemeliharaan</string>
+    <string name="dialog_msg_connection_eror">Pastikan anda memiliki koneksi internet yang aktif</string>
+    <string name="dialog_msg_connection_unstable">Pastikan anda memiliki koneksi internet yang stabil</string>
+    <string name="dialog_msg_logout_confirmation">Apakah anda yakin ingin keluar dari akun?</string>
+    <string name="dialog_msg_exitapp_confirmation">Apakah anda yakin ingin keluar dari aplikasi?</string>
+    <string name="dialog_msg_exitform_confirmation">Apakah anda yakin ingin keluar dari form? Data yang sudah terisi tidak akan tersimpan</string>
+
+    <!--Error-->
+    <string name="eror_empty_field">Field ini tidak boleh kosong</string>
+    <string name="eror_email_invalid">Harap masukan email dengan benar</string>
+    <string name="eror_form_null">Harap isi semua data</string>
+    <string name="eror_password_equals">Password tidak sama</string>
+
+    <!--Toast-->
+    <string name="toast_picture_not_taken">Foto tidak diambil!</string>
+    <string name="toast_picture">Harap %1$s</string>
+    <string name="toast_result_choice">Harap pilih tipe hasil result</string>
+    <string name="toast_success_checkin">Anda berhasil checkin</string>
+    <string name="toast_success_checkout">Anda berhasil checkout</string>
+    <string name="toast_access_denied">Akses Ditolak</string>
+    <string name="toast_role_null">Akun anda tidak terdaftar!</string>
+    <string name="toast_user_inactive">Akun anda tidak aktif!</string>
+    <string name="toast_imei_invalid">Mohon untuk login di perangkat yang sama!</string>
+    <string name="toast_relogin">Mohon untuk login kembali</string>
+    <string name="toast_wait_for_further_information">Harap menunggu informasi lebih lanjut</string>
+    <string name="toast_duplicate_data">Terdapat duplikasi data</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">profile</string>
+
 </resources>

@@ -1,11 +1,290 @@
 <resources>
-
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="materialCardViewStyle">@style/AppCard</item>
+        <item name="actionMenuTextColor">@color/googleDark</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/change_image_transform
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/change_image_transform
+        </item>
     </style>
+    <!--................. GLOBAL .................-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+    <!--................. GLOBAL .................-->
+    <!--................. TEXT SIZE .................-->
+    <style name="TextHead" parent="TextXSm">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/googleDark</item>
+    </style>
+
+    <style name="TextSubHead" parent="TextXSm">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextTitle" parent="TextXSm">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextMd" parent="TextXSm">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextSm" parent="TextXSm">
+        <item name="android:textSize">12sp</item> <!--  For supporting text  -->
+    </style>
+
+    <style name="TextXSm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_font</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="TextAccent" parent="TextXSm">
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">@font/roboto_font_med</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <!--................. TEXT SIZE .................-->
+    <!--................. VIEW .................-->
+    <!-- Action Bar -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- Transparent status bar -->
+    <style name="AppTheme.TransparentStatusBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <!-- Light status bar -->
+    <style name="AppTheme.LightStatusBar">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <!--Tab Layout-->
+    <style name="MyTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Custom.Widget.Toolbar.Button.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">48dp</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <!--Bottom Nav-->
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!--Card-->
+    <style name="AppCard" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardElevation">@dimen/card_md_elevation</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:stateListAnimator">@anim/anim_card</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="AppCardBlue" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardElevation">@dimen/card_lg_elevation</item>
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:stateListAnimator">@anim/anim_card</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="AppCardMd" parent="AppCard">
+        <item name="cardElevation">@dimen/card_md_elevation</item>
+    </style>
+
+    <style name="AppCardLg" parent="AppCard">
+        <item name="cardElevation">@dimen/card_lg_elevation</item>
+    </style>
+    <!--Spinner-->
+    <style name="SpinnerSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <!-- Progress Bar -->
+    <style name="PbSmall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--Edit Text-->
+    <style name="EditTextSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EditTextSmall.Disabled">
+        <item name="android:clickable">false</item>
+        <item name="android:inputType">text|none</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <!-- Button -->
+    <style name="BtnColored" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_font_med</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BtnOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_font_med</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BtnUnelevated" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_font_med</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BtnText" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_font_med</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <!--Switch-->
+    <style name="SwitchMed">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- Chip -->
+    <style name="ChipChoice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ChipChoice.Transparent" parent="ChipChoice">
+        <item name="chipBackgroundColor">@android:color/transparent</item>
+    </style>
+    <!-- Radio button -->
+    <style name="AppRb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleX">0.85</item>
+        <item name="android:scaleY">0.85</item>
+    </style>
+    <!-- Auto Complete -->
+    <style name="AutoCompleteView" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">28dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- Floating action button -->
+    <style name="AppFab" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+    <!--................. VIEW .................-->
+    <!--................. VIEW GROUP .................-->
+    <!-- Material input layout -->
+    <style name="EditLayoutMaterial" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="prefixTextAppearance">@style/TextMd</item>
+        <item name="boxBackgroundColor">@android:color/white</item>
+    </style>
+    <!-- Materiaol auto complete layout -->
+    <style name="AutoCompleteLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="boxBackgroundColor">@android:color/white</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+    </style>
+    <!-- Parent layout -->
+    <style name="AppParentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:animationCache">true</item>
+    </style>
+
+    <style name="AppParentLayout.NoAnimation" parent="AppParentLayout">
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="android:animationCache">false</item>
+    </style>
+    <!--................. VIEW GROUP .................-->
+    <!--................. OTHER .................-->
+    <!-- Horizontal Divider -->
+    <style name="ViewHorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">@dimen/divider_margin</item>
+        <item name="android:layout_marginRight">@dimen/divider_margin</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <!-- Vertical Divider -->
+    <style name="ViewVerticalDivider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/divider_margin</item>
+        <item name="android:layout_marginRight">@dimen/divider_margin</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <!--................. OTHER .................-->
 
 </resources>
